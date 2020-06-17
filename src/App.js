@@ -10,7 +10,7 @@ function App() {
     fetch(BASE_URL)
     .then(res => res.json())
     .then(data => console.log(data))
-    
+
   }, [])
 
   return (
