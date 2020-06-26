@@ -7,6 +7,8 @@ const BASE_URL = "https://api.exchangeratesapi.io/latest"
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([])
+  const [fromCurrency, setFromCurrency] = useState()
+  const [toCurrency, setToCurrency] = useState()
 
   useEffect(() => {
     fetch(BASE_URL)
